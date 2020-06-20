@@ -1,7 +1,7 @@
 const uppercaseFromAToZRegexp = /^[A-Z]/;
 
 // Returns true if string starts with uppercase letter from A to Z
-export default function startsWithUppercase(text: string): boolean {
+export default function startsWithUppercase(text) {
   if (typeof text !== "string") {
     throw new Error('Input should be string')
   }

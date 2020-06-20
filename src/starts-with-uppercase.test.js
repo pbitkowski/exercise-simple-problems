@@ -19,18 +19,12 @@ it("returns false for empty string", () => {
 });
 
 it("throws error for non-string input", () => {
-  // @ts-ignore explicit bad input
-  expect(() => startsWithUppercase(undefined)).toThrowError();
-  // @ts-ignore explicit bad input
   expect(() => startsWithUppercase(true)).toThrowError();
-  // @ts-ignore explicit bad input
   expect(() => startsWithUppercase(null)).toThrowError();
-  // @ts-ignore explicit bad input
   expect(() => calculateCircleArea([])).toThrowError();
-  // @ts-ignore explicit bad input
   expect(() => startsWithUppercase({})).toThrowError();
-  // @ts-ignore explicit bad input
   expect(() => startsWithUppercase()).toThrowError();
+  expect(() => startsWithUppercase(1)).toThrowError();
 }); 
 
 

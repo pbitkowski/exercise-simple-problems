@@ -14,17 +14,11 @@ describe("calculateCircleArea for radius", () => {
   });
 
   test("throws error for not number radius", () => {
-    // @ts-ignore explicit bad input
-    expect(() => calculateCircleArea(undefined)).toThrowError();
-    // @ts-ignore explicit bad input
     expect(() => calculateCircleArea(true)).toThrowError();
-    // @ts-ignore explicit bad input
     expect(() => calculateCircleArea(null)).toThrowError();
-    // @ts-ignore explicit bad input
     expect(() => calculateCircleArea([])).toThrowError();
-    // @ts-ignore explicit bad input
     expect(() => calculateCircleArea({})).toThrowError();
-    // @ts-ignore explicit bad input
     expect(() => calculateCircleArea()).toThrowError();
+    expect(() => calculateCircleArea('')).toThrowError();
   });
 });
